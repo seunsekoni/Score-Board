@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Score Board</string>
+    <string name="default_score">0</string>
+    <string name="goal">goal(s)</string>
+    <string name="penalty">penalty</string>
+    <string name="yellow">yellow</string>
+    <string name="red">red</string>
+    <string name="zero">0</string>
+</resources>
