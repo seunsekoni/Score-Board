@@ -3,23 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/champions"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <RelativeLayout
             android:id="@+id/relative_one"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#000000"
-            android:alpha=".75"
             android:layout_alignParentTop="true"
-            >
+            android:alpha=".75"
+            android:background="#000000">
 
             <ImageView
                 android:id="@+id/arsenal_logo"
@@ -39,20 +38,20 @@
                 android:src="@drawable/barca" />
 
             <TextView
+                android:id="@+id/score_arsenal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/arsenal_logo"
                 android:layout_marginLeft="70dp"
-                android:id="@+id/score_arsenal"
                 android:text="@string/default_score"
                 android:textColor="#FFFFFF"
                 android:textSize="56sp" />
 
             <TextView
+                android:id="@+id/score_barcelona"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:id="@+id/score_barcelona"
                 android:layout_below="@id/barca_logo"
                 android:layout_marginRight="70dp"
                 android:text="@string/default_score"
@@ -87,14 +86,14 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/rounded_corner"
-                    android:text="@string/goal"
-                    android:onClick="addOneGoalForTeamArsenal"/>
+                    android:onClick="addOneGoalForTeamArsenal"
+                    android:text="@string/goal" />
 
                 <TextView
+                    android:id="@+id/arsenal_goal_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
-                    android:id="@+id/arsenal_goal_text_view"
                     android:layout_marginTop="8dp"
                     android:layout_toRightOf="@id/arsenal_goal_btn"
                     android:background="@drawable/shape"
@@ -118,15 +117,15 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/rounded_corner"
-                    android:text="@string/penalty"
-                    android:onClick="addOnePenaltyForTeamArsenal"/>
+                    android:onClick="addOnePenaltyForTeamArsenal"
+                    android:text="@string/penalty" />
 
                 <TextView
+                    android:id="@+id/arsenal_penalty_kick_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
-                    android:id="@+id/arsenal_penalty_kick_text_view"
                     android:layout_toRightOf="@id/arsenal_penalty_kick_btn"
                     android:background="@drawable/shape"
                     android:gravity="center"
@@ -147,16 +146,15 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/rounded_corner_yellow"
-                    android:text="@string/yellow"
                     android:onClick="addOneYellowForTeamArsenal"
-                    />
+                    android:text="@string/yellow" />
 
                 <TextView
+                    android:id="@+id/arsenal_yellow_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
-                    android:id="@+id/arsenal_yellow_text_view"
                     android:layout_toRightOf="@id/yellow_btn"
                     android:background="@drawable/shape"
                     android:gravity="center"
@@ -180,14 +178,14 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/rounded_corner_red"
-                    android:text="@string/red"
-                    android:onClick="addOneRedForTeamArsenal"/>
+                    android:onClick="addOneRedForTeamArsenal"
+                    android:text="@string/red" />
 
                 <TextView
+                    android:id="@+id/arsenal_red_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="8dp"
-                    android:id="@+id/arsenal_red_text_view"
                     android:layout_marginTop="8dp"
                     android:layout_toRightOf="@id/red_btn"
                     android:background="@drawable/shape"
@@ -200,9 +198,9 @@
         </LinearLayout>
 
         <View
-            android:layout_height="match_parent"
             android:layout_width="2dp"
-            android:background="#FFFFFF"/>
+            android:layout_height="match_parent"
+            android:background="#FFFFFF" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -234,8 +232,8 @@
                     android:layout_marginTop="8dp"
                     android:layout_toRightOf="@id/barcelona_goal_text_view"
                     android:background="@drawable/rounded_corner"
-                    android:text="@string/goal"
-                    android:onClick="addOneGoalForTeamBarcelona"/>
+                    android:onClick="addOneGoalForTeamBarcelona"
+                    android:text="@string/goal" />
 
             </RelativeLayout>
 
@@ -263,8 +261,8 @@
                     android:layout_marginTop="8dp"
                     android:layout_toRightOf="@id/barcelona_penalty_text_view"
                     android:background="@drawable/rounded_corner"
-                    android:text="@string/penalty"
-                    android:onClick="addOnePenaltyForTeamBarcelona"/>
+                    android:onClick="addOnePenaltyForTeamBarcelona"
+                    android:text="@string/penalty" />
 
 
             </RelativeLayout>
@@ -293,9 +291,8 @@
                     android:layout_marginTop="8dp"
                     android:layout_toRightOf="@id/barcelona_yellow_text_view"
                     android:background="@drawable/rounded_corner_yellow"
-                    android:text="@string/yellow"
                     android:onClick="addOneYellowForTeamBarcelona"
-                    />
+                    android:text="@string/yellow" />
 
             </RelativeLayout>
 
@@ -323,8 +320,8 @@
                     android:layout_marginTop="8dp"
                     android:layout_toRightOf="@id/barcelona_red_text_view"
                     android:background="@drawable/rounded_corner_red"
-                    android:text="@string/red"
-                    android:onClick="addOneRedForTeamBarcelona"/>
+                    android:onClick="addOneRedForTeamBarcelona"
+                    android:text="@string/red" />
 
             </RelativeLayout>
         </LinearLayout>
@@ -334,9 +331,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
         android:alpha=".85"
-        android:background="#000000">
+        android:background="#000000"
+        android:orientation="horizontal">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -345,19 +342,17 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="RESET"
-                android:gravity="center"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/rounded_corner_reset"
                 android:layout_marginBottom="25dp"
+                android:background="@drawable/rounded_corner_reset"
+                android:gravity="center"
                 android:onClick="resetScoreBoard"
-                />
+                android:text="RESET"
+                android:textColor="#FFFFFF" />
 
         </RelativeLayout>
     </LinearLayout>
-
 
 
 </LinearLayout>
